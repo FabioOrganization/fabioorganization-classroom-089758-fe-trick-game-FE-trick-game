@@ -1,0 +1,151 @@
+name: Autograding Tests
+'on':
+  - push
+  - repository_dispatch
+permissions:
+  checks: write
+  actions: read
+  contents: read
+jobs:
+  run-autograding-tests:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Test_obtenerMazoPorFetch
+        id: Test_obtenerMazoPorFetch
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Test_obtenerMazoPorFetch
+          setup-command: npm install
+          command: npm test -- -t "obtenerMazoPorFetch llama a /cartas con GET"
+          timeout: 10
+          max-score: 10
+      - name: Test_guardarPartidaFetch
+        id: Test_guardarPartidaFetch
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Test_guardarPartidaFetch
+          setup-command: npm install
+          command: npm test -- -t "guardarPartidaFetch llama a /partidas por POST y envía datos"
+          timeout: 10
+          max-score: 10
+      - name: Test_getHistorialPartidasFetch
+        id: Test_getHistorialPartidasFetch
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Test_getHistorialPartidasFetch
+          setup-command: npm install
+          command: npm test -- -t "guardarPartidaFetch llama a /partidas por POST y envía datos"
+          timeout: 10
+          max-score: 10
+      - name: Test_mezclar
+        id: Test_mezclar
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Test_mezclar
+          setup-command: npm install
+          command: npm test -- -t "mezclar desordena el array pero no quita/duplica cartas"
+          timeout: 10
+          max-score: 10
+      - name: Test_repartirManos
+        id: Test_repartirManos
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Test_repartirManos
+          setup-command: npm install
+          command: npm test -- -t "repartirManos reparte 3 cartas a cada uno y quita del mazo"
+          timeout: 10
+          max-score: 10
+      - name: Test_jerarquiaCarta
+        id: Test_jerarquiaCarta
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Test_jerarquiaCarta
+          setup-command: npm install
+          command: npm test -- -t "jerarquiaCarta coloca 1 de espadas < 1 de bastos < 7 de espadas"
+          timeout: 10
+          max-score: 10
+      - name: Test_ganadorRonda
+        id: Test_ganadorRonda
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Test_ganadorRonda
+          setup-command: npm install
+          command: npm test -- -t "ganadorRonda detecta el ganador correctamente o empate"
+          timeout: 10
+          max-score: 10
+      - name: Test_quita_carta
+        id: Test_quita_carta
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Test_quita_carta
+          setup-command: npm install
+          command: npm test -- -t "quita carta de la mano y la almacena en la ronda"
+          timeout: 10
+          max-score: 5
+      - name: Test_nueva_ronda
+        id: Test_nueva_ronda
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Test_nueva_ronda
+          setup-command: npm install
+          command: npm test -- -t "crea nueva ronda si no hay"
+          timeout: 10
+          max-score: 5
+      - name: Test_ronda_incompleta
+        id: Test_ronda_incompleta
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Test_ronda_incompleta
+          setup-command: npm install
+          command: npm test -- -t "no crea nueva ronda si ronda incompleta"
+          timeout: 10
+          max-score: 5
+      - name: Test_ganador_ronda
+        id: Test_ganador_ronda
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Test_ganador_ronda
+          setup-command: npm install
+          command: npm test -- -t "cuando ambos juegan, se determina el ganador y suma puntos"
+          timeout: 10
+          max-score: 5
+      - name: Test_turno
+        id: Test_turno
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Test_turno
+          setup-command: npm install
+          command: npm test -- -t "pasa el turno al siguiente"
+          timeout: 10
+          max-score: 5
+      - name: Test_ganadorPartida
+        id: Test_ganadorPartida
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Test_ganadorPartida
+          setup-command: npm install
+          command: npm test -- -t "ganadorPartida detecta el que gana dos rondas"
+          timeout: 10
+          max-score: 5
+      - name: Autograding Reporter
+        uses: classroom-resources/autograding-grading-reporter@v1
+        env:
+          TEST_OBTENERMAZOPORFETCH_RESULTS: "${{steps.Test_obtenerMazoPorFetch.outputs.result}}"
+          TEST_GUARDARPARTIDAFETCH_RESULTS: "${{steps.Test_guardarPartidaFetch.outputs.result}}"
+          TEST_GETHISTORIALPARTIDASFETCH_RESULTS: "${{steps.Test_getHistorialPartidasFetch.outputs.result}}"
+          TEST_MEZCLAR_RESULTS: "${{steps.Test_mezclar.outputs.result}}"
+          TEST_REPARTIRMANOS_RESULTS: "${{steps.Test_repartirManos.outputs.result}}"
+          TEST_JERARQUIACARTA_RESULTS: "${{steps.Test_jerarquiaCarta.outputs.result}}"
+          TEST_GANADORRONDA_RESULTS: "${{steps.Test_ganadorRonda.outputs.result}}"
+          TEST_QUITA_CARTA_RESULTS: "${{steps.Test_quita_carta.outputs.result}}"
+          TEST_NUEVA_RONDA_RESULTS: "${{steps.Test_nueva_ronda.outputs.result}}"
+          TEST_RONDA_INCOMPLETA_RESULTS: "${{steps.Test_ronda_incompleta.outputs.result}}"
+          TEST_GANADOR_RONDA_RESULTS: "${{steps.Test_ganador_ronda.outputs.result}}"
+          TEST_TURNO_RESULTS: "${{steps.Test_turno.outputs.result}}"
+          TEST_GANADORPARTIDA_RESULTS: "${{steps.Test_ganadorPartida.outputs.result}}"
+
+        with:
+          runners: Test_obtenerMazoPorFetch,Test_guardarPartidaFetch,Test_getHistorialPartidasFetch,Test_mezclar,Test_repartirManos,Test_jerarquiaCarta,Test_ganadorRonda,Test_quita_carta,Test_nueva_ronda,Test_ronda_incompleta,Test_ganador_ronda,Test_turno,Test_ganadorPartida

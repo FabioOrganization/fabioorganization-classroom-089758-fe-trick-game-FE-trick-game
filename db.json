@@ -1,0 +1,549 @@
+{
+  "cartas": [
+    {
+      "valor": 1,
+      "palo": "Espadas",
+      "id": "4ea1"
+    },
+    {
+      "valor": 2,
+      "palo": "Espadas",
+      "id": "7a8d"
+    },
+    {
+      "valor": 3,
+      "palo": "Espadas",
+      "id": "cfb2"
+    },
+    {
+      "valor": 4,
+      "palo": "Espadas",
+      "id": "a12d"
+    },
+    {
+      "valor": 5,
+      "palo": "Espadas",
+      "id": "151f"
+    },
+    {
+      "valor": 6,
+      "palo": "Espadas",
+      "id": "d552"
+    },
+    {
+      "valor": 7,
+      "palo": "Espadas",
+      "id": "e8bb"
+    },
+    {
+      "valor": 10,
+      "palo": "Espadas",
+      "id": "919d"
+    },
+    {
+      "valor": 11,
+      "palo": "Espadas",
+      "id": "3280"
+    },
+    {
+      "valor": 12,
+      "palo": "Espadas",
+      "id": "56dc"
+    },
+    {
+      "valor": 1,
+      "palo": "Bastos",
+      "id": "b0da"
+    },
+    {
+      "valor": 2,
+      "palo": "Bastos",
+      "id": "7c74"
+    },
+    {
+      "valor": 3,
+      "palo": "Bastos",
+      "id": "ed64"
+    },
+    {
+      "valor": 4,
+      "palo": "Bastos",
+      "id": "417c"
+    },
+    {
+      "valor": 5,
+      "palo": "Bastos",
+      "id": "4af8"
+    },
+    {
+      "valor": 6,
+      "palo": "Bastos",
+      "id": "9d7d"
+    },
+    {
+      "valor": 7,
+      "palo": "Bastos",
+      "id": "ffca"
+    },
+    {
+      "valor": 10,
+      "palo": "Bastos",
+      "id": "ced8"
+    },
+    {
+      "valor": 11,
+      "palo": "Bastos",
+      "id": "7f31"
+    },
+    {
+      "valor": 12,
+      "palo": "Bastos",
+      "id": "41b0"
+    },
+    {
+      "valor": 1,
+      "palo": "Oros",
+      "id": "dc31"
+    },
+    {
+      "valor": 2,
+      "palo": "Oros",
+      "id": "63c4"
+    },
+    {
+      "valor": 3,
+      "palo": "Oros",
+      "id": "9ea4"
+    },
+    {
+      "valor": 4,
+      "palo": "Oros",
+      "id": "9f94"
+    },
+    {
+      "valor": 5,
+      "palo": "Oros",
+      "id": "6e31"
+    },
+    {
+      "valor": 6,
+      "palo": "Oros",
+      "id": "8aa7"
+    },
+    {
+      "valor": 7,
+      "palo": "Oros",
+      "id": "ba45"
+    },
+    {
+      "valor": 10,
+      "palo": "Oros",
+      "id": "7f06"
+    },
+    {
+      "valor": 11,
+      "palo": "Oros",
+      "id": "fc68"
+    },
+    {
+      "valor": 12,
+      "palo": "Oros",
+      "id": "f3ad"
+    },
+    {
+      "valor": 1,
+      "palo": "Copas",
+      "id": "305c"
+    },
+    {
+      "valor": 2,
+      "palo": "Copas",
+      "id": "6147"
+    },
+    {
+      "valor": 3,
+      "palo": "Copas",
+      "id": "1052"
+    },
+    {
+      "valor": 4,
+      "palo": "Copas",
+      "id": "197f"
+    },
+    {
+      "valor": 5,
+      "palo": "Copas",
+      "id": "64ad"
+    },
+    {
+      "valor": 6,
+      "palo": "Copas",
+      "id": "b45c"
+    },
+    {
+      "valor": 7,
+      "palo": "Copas",
+      "id": "b714"
+    },
+    {
+      "valor": 10,
+      "palo": "Copas",
+      "id": "c481"
+    },
+    {
+      "valor": 11,
+      "palo": "Copas",
+      "id": "61a9"
+    },
+    {
+      "valor": 12,
+      "palo": "Copas",
+      "id": "45d9"
+    }
+  ],
+  "partidas": [
+    {
+      "id": "b19c",
+      "ganador": 0,
+      "jugadas": [
+        {
+          "carta1": {
+            "valor": 1,
+            "palo": "Copas",
+            "id": "305c"
+          },
+          "carta2": {
+            "valor": 6,
+            "palo": "Espadas",
+            "id": "d552"
+          },
+          "ganador": 0
+        },
+        {
+          "carta1": {
+            "valor": 7,
+            "palo": "Oros",
+            "id": "ba45"
+          },
+          "carta2": {
+            "valor": 12,
+            "palo": "Oros",
+            "id": "f3ad"
+          },
+          "ganador": 0
+        }
+      ],
+      "fecha": "2025-04-29T02:44:27.800Z"
+    },
+    {
+      "id": "d4b4",
+      "ganador": 1,
+      "jugadas": [
+        {
+          "carta1": {
+            "valor": 5,
+            "palo": "Bastos",
+            "id": "4af8"
+          },
+          "carta2": {
+            "valor": 11,
+            "palo": "Espadas",
+            "id": "3280"
+          },
+          "ganador": 1
+        },
+        {
+          "carta1": {
+            "valor": 6,
+            "palo": "Oros",
+            "id": "8aa7"
+          },
+          "carta2": {
+            "valor": 7,
+            "palo": "Oros",
+            "id": "ba45"
+          },
+          "ganador": 1
+        }
+      ],
+      "fecha": "2025-04-29T02:45:18.946Z"
+    },
+    {
+      "id": "e5c5",
+      "ganador": 1,
+      "jugadas": [
+        {
+          "carta1": {
+            "valor": 11,
+            "palo": "Oros",
+            "id": "fc68"
+          },
+          "carta2": {
+            "valor": 3,
+            "palo": "Copas",
+            "id": "1052"
+          },
+          "ganador": 1
+        },
+        {
+          "carta1": {
+            "valor": 1,
+            "palo": "Copas",
+            "id": "305c"
+          },
+          "carta2": {
+            "valor": 1,
+            "palo": "Oros",
+            "id": "dc31"
+          },
+          "ganador": 1
+        }
+      ],
+      "fecha": "2025-04-29T02:47:47.882Z"
+    },
+    {
+      "id": "3cc5",
+      "ganador": 1,
+      "jugadas": [
+        {
+          "carta1": {
+            "valor": 7,
+            "palo": "Bastos",
+            "id": "ffca"
+          },
+          "carta2": {
+            "valor": 2,
+            "palo": "Bastos",
+            "id": "7c74"
+          },
+          "ganador": 1
+        },
+        {
+          "carta1": {
+            "valor": 5,
+            "palo": "Espadas",
+            "id": "151f"
+          },
+          "carta2": {
+            "valor": 6,
+            "palo": "Bastos",
+            "id": "9d7d"
+          },
+          "ganador": 1
+        }
+      ],
+      "fecha": "2025-04-29T02:47:58.882Z"
+    },
+    {
+      "id": "b412",
+      "ganador": 0,
+      "jugadas": [
+        {
+          "carta1": {
+            "valor": 1,
+            "palo": "Copas",
+            "id": "305c"
+          },
+          "carta2": {
+            "valor": 10,
+            "palo": "Oros",
+            "id": "7f06"
+          },
+          "ganador": 0
+        },
+        {
+          "carta1": {
+            "valor": 2,
+            "palo": "Espadas",
+            "id": "7a8d"
+          },
+          "carta2": {
+            "valor": 5,
+            "palo": "Espadas",
+            "id": "151f"
+          },
+          "ganador": 0
+        }
+      ],
+      "fecha": "2025-04-29T02:48:24.483Z"
+    },
+    {
+      "id": "590b",
+      "ganador": 1,
+      "jugadas": [
+        {
+          "carta1": {
+            "valor": 11,
+            "palo": "Oros",
+            "id": "fc68"
+          },
+          "carta2": {
+            "valor": 7,
+            "palo": "Oros",
+            "id": "ba45"
+          },
+          "ganador": 1
+        },
+        {
+          "carta1": {
+            "valor": 4,
+            "palo": "Espadas",
+            "id": "a12d"
+          },
+          "carta2": {
+            "valor": 10,
+            "palo": "Copas",
+            "id": "c481"
+          },
+          "ganador": 1
+        }
+      ],
+      "fecha": "2025-04-29T12:28:45.042Z"
+    },
+    {
+      "id": "1ef4",
+      "ganador": 1,
+      "jugadas": [
+        {
+          "carta1": {
+            "valor": 11,
+            "palo": "Espadas",
+            "id": "3280"
+          },
+          "carta2": {
+            "valor": 3,
+            "palo": "Bastos",
+            "id": "ed64"
+          },
+          "ganador": 1
+        },
+        {
+          "carta1": {
+            "valor": 10,
+            "palo": "Espadas",
+            "id": "919d"
+          },
+          "carta2": {
+            "valor": 2,
+            "palo": "Oros",
+            "id": "63c4"
+          },
+          "ganador": 1
+        }
+      ],
+      "fecha": "2025-04-29T12:28:54.886Z"
+    },
+    {
+      "id": "9672",
+      "ganador": 0,
+      "jugadas": [
+        {
+          "carta1": {
+            "valor": 12,
+            "palo": "Oros",
+            "id": "f3ad"
+          },
+          "carta2": {
+            "valor": 4,
+            "palo": "Oros",
+            "id": "9f94"
+          },
+          "ganador": 0
+        },
+        {
+          "carta1": {
+            "valor": 2,
+            "palo": "Copas",
+            "id": "6147"
+          },
+          "carta2": {
+            "valor": 4,
+            "palo": "Bastos",
+            "id": "417c"
+          },
+          "ganador": 0
+        }
+      ],
+      "fecha": "2025-04-29T12:29:03.970Z"
+    },
+    {
+      "id": "27b8",
+      "ganador": 1,
+      "jugadas": [
+        {
+          "carta1": {
+            "valor": 11,
+            "palo": "Copas",
+            "id": "61a9"
+          },
+          "carta2": {
+            "valor": 5,
+            "palo": "Copas",
+            "id": "64ad"
+          },
+          "ganador": 0
+        },
+        {
+          "carta1": {
+            "valor": 7,
+            "palo": "Oros",
+            "id": "ba45"
+          },
+          "carta2": {
+            "valor": 7,
+            "palo": "Espadas",
+            "id": "e8bb"
+          },
+          "ganador": 1
+        },
+        {
+          "carta1": {
+            "valor": 6,
+            "palo": "Espadas",
+            "id": "d552"
+          },
+          "carta2": {
+            "valor": 7,
+            "palo": "Copas",
+            "id": "b714"
+          },
+          "ganador": 1
+        }
+      ],
+      "fecha": "2025-04-29T14:00:25.559Z"
+    },
+    {
+      "id": "67ea",
+      "ganador": 1,
+      "jugadas": [
+        {
+          "carta1": {
+            "valor": 10,
+            "palo": "Oros",
+            "id": "7f06"
+          },
+          "carta2": {
+            "valor": 3,
+            "palo": "Copas",
+            "id": "1052"
+          },
+          "ganador": 1
+        },
+        {
+          "carta1": {
+            "valor": 6,
+            "palo": "Copas",
+            "id": "b45c"
+          },
+          "carta2": {
+            "valor": 11,
+            "palo": "Espadas",
+            "id": "3280"
+          },
+          "ganador": 1
+        }
+      ],
+      "fecha": "2025-04-29T14:00:37.521Z"
+    }
+  ]
+}
